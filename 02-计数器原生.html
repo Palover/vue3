@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="counter">0</h2>
+    <button id="increment">+</button>
+    <button id="decrement">-</button>
+    <script>
+        let num = document.querySelector("#counter")
+        let result = 100;
+        num.innerHTML = result;
+        let increment = document.querySelector("#increment")
+        let decrement = document.querySelector("#decrement")
+        increment.addEventListener('click',()=>{
+            console.log(111)
+            result += 1;
+            num.innerHTML = result;
+        })
+        decrement.addEventListener('click',()=>{
+            num.innerHTML = result--;
+        })
+
+        // const counterEl = document.querySelector(".counter");
+        // const incrementEl = document.querySelector(".increment");
+        // const decrementEl = document.querySelector(".decrement");
+        // let counter = 100;
+        // counterEl.innerHTML = counter;
+
+        // incrementEl.addEventListener('click',()=>{
+        //     counter = counter+1;
+        //     console.log(counter)
+        //     counterEl.innerHTML = counter
+        //     console.log(counterEl.innerHtml)
+        //     console.log(counterEl)
+        // })
+    </script>
+</body>
+</html>
